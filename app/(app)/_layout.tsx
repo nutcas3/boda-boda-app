@@ -17,7 +17,8 @@ export default function AppLayout() {
 			}}
 		>
 			<Tabs.Screen name="index" />
-			<Tabs.Screen name="two" />
+			<Tabs.Screen name="panicButton" />
+			<Tabs.Screen name="aiHelper" />
 		</Tabs>
 	);
 }
