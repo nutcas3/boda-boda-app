@@ -88,8 +88,6 @@ export default function SignIn() {
 						/>
 					</View>
 				</Form>
-			</View>
-			<View className="gap-y-4">
 				<Button
 					size="default"
 					variant="mainColor"
@@ -111,6 +109,7 @@ export default function SignIn() {
 					<Text className="leading-7 text-foreground">Sign up</Text>
 				</Text>
 			</View>
+			
 		</View>
 	);
 }
