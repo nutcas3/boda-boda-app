@@ -28,7 +28,7 @@ export default function WelcomeScreen() {
 				<Button
 					className="flex-1"
 					size="default"
-					variant="default"
+					variant="mainColor"
 					onPress={() => {
 						router.push("/sign-up");
 					}}

@@ -126,7 +126,7 @@ export default function SignUp() {
 			<View className="gap-y-4">
 				<Button
 					size="default"
-					variant="default"
+					variant="mainColor"
 					onPress={form.handleSubmit(onSubmit)}
 				>
 					{form.formState.isSubmitting ? (
