@@ -53,7 +53,7 @@ export default function SignIn() {
 					Sign In
 				</Text>
 				<Text className="text-sm text-muted-foreground self-start mb-5">
-					to continue to Expo Supabase Starter
+					to continue to Boda Boda application
 				</Text>
 				<Form {...form}>
 					<View className="gap-4">
@@ -63,7 +63,7 @@ export default function SignIn() {
 							render={({ field }) => (
 								<FormInput
 									label="Email"
-									placeholder="Email"
+									placeholder="Email" // Placeholder for email input field
 									autoCapitalize="none"
 									autoComplete="email"
 									autoCorrect={false}
