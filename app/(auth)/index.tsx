@@ -1,6 +1,6 @@
 import { useRouter } from "expo-router";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import { Button } from "@/components/ui";
@@ -20,14 +20,11 @@ export default function WelcomeScreen() {
 		>
 			<View className="flex flex-1 items-center justify-center gap-y-4">
 				<Text className="text-4xl text-foreground font-extrabold tracking-tight lg:text-5xl text-center">
-					Welcome to Expo Supabase Starter
+					Welcome to Boda Boda Law
 				</Text>
 				<Text className="text-sm text-muted-foreground text-center">
-					A simple template for developing Expo applications with Supabase as
-					the backend.
+					A simple application to aid you in your needs a a rider,and conect you to Lawyers,Insurance and AI assistant
 				</Text>
-			</View>
-			<View className="flex flex-row gap-x-4">
 				<Button
 					className="flex-1"
 					size="default"
@@ -38,16 +35,15 @@ export default function WelcomeScreen() {
 				>
 					Sign up
 				</Button>
-				<Button
-					className="flex-1"
-					size="default"
-					variant="secondary"
+				<Text
+					className="text-sm text-muted-foreground text-center"
 					onPress={() => {
-						router.push("/sign-in");
+						router.replace("/sign-in");
 					}}
 				>
-					Sign in
-				</Button>
+					Already have an account?{" "}
+					<Text className="leading-7 text-foreground">Sign in</Text>
+				</Text>
 			</View>
 		</View>
 	);
