@@ -15,6 +15,7 @@ const buttonVariants = cva("flex-row items-center justify-center rounded-md", {
 			secondary: "bg-secondary",
 			ghost: "",
 			link: "",
+			mainColor: "bg-red-600",
 		},
 		size: {
 			default: "h-10 px-4 py-2",
@@ -37,6 +38,7 @@ const buttonTextVariants = cva("font-medium", {
 			secondary: "text-secondary-foreground",
 			ghost: "text-foreground",
 			link: "text-primary underline-offset-4 underline",
+			mainColor: "text-white",
 		},
 		size: {
 			default: "text-sm font-medium",

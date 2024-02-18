@@ -1,6 +1,7 @@
 import { Tabs } from "expo-router";
 import { useColorScheme } from "nativewind";
 import React from "react";
+// import { Ionicons } from "@expo/vector-icons";
 
 export default function AppLayout() {
 	const { colorScheme } = useColorScheme();
@@ -17,7 +18,8 @@ export default function AppLayout() {
 			}}
 		>
 			<Tabs.Screen name="index" />
-			<Tabs.Screen name="two" />
+			<Tabs.Screen name="panicButton" />
+			<Tabs.Screen name="aiHelper" />
 		</Tabs>
 	);
 }
